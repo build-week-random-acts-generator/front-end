@@ -1,5 +1,5 @@
 import React from 'react';
-import Auth from './authentication';
+import Auth from '../Auth/authentication';
 
 export const LandingPage = props =>
 {
