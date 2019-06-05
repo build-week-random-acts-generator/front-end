@@ -18,4 +18,4 @@ class Auth {
     }
 }
 
-exoirt default new Auth();
+export default new Auth();
