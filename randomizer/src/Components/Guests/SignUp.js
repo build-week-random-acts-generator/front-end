@@ -7,6 +7,7 @@ class signUp extends Component {
         this.state = {
             first: '',
             last: '',
+            phone: '',
             email: '',
             password: ''
         }
@@ -25,6 +26,7 @@ class signUp extends Component {
         const user = {
             first: this.state.first,
             last: this.state.last,
+            phone: this.state.phone,
             email: this.state.email,
             password: this.state.password
         }
@@ -49,7 +51,7 @@ class signUp extends Component {
                                     className = "form-control"
                                     name = "first"
                                     placeholder = "First Name"
-                                    value = {this.state.email}
+                                    value = {this.state.first}
                                     onChange = {this.onChange}
                                     />
                             </div>
@@ -59,7 +61,17 @@ class signUp extends Component {
                                     className = "form-control"
                                     name = "last"
                                     placeholder = "Last Name"
-                                    value = {this.state.email}
+                                    value = {this.state.last}
+                                    onChange = {this.onChange}
+                                    />
+                            </div>
+                            <div className = "form-group">
+                                <label htmlFor = "phone">Mobile Phone</label>
+                                <input type = "text"
+                                    className = "form-control"
+                                    name = "phone"
+                                    placeholder = "Phone Number"
+                                    value = {this.state.phone}
                                     onChange = {this.onChange}
                                     />
                             </div>
@@ -79,7 +91,7 @@ class signUp extends Component {
                                     className = "form-control"
                                     name = "password"
                                     placeholder = "Password:"
-                                    value = {this.state.email}
+                                    value = {this.state.password}
                                     onChange = {this.onChange}
                                     />
                             </div>
